@@ -95,7 +95,7 @@ class TeamsMainPost(models.Model):
     team_title = models.CharField(max_length=255, blank=True, null=True)
     team_description = models.TextField()
     team_slug = models.SlugField (max_length=255,blank=True, null=True)
-    team_magnus_img = models.ImageField(upload_to=' team_images/')
+    team_magnus_img = models.ImageField(upload_to='team_images/')
     team_publish_date = models.DateTimeField (auto_now_add= True)
     team_author = models.ForeignKey(User, on_delete=models.CASCADE)
 

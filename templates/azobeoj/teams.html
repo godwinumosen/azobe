@@ -1,9 +1,64 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content%}
+{% block content %}
 
+<!-- Team Section -->
+<section class="py-5 bg-light">
+  <div class="container">
 
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Meet Our Team</h2>
+      <p class="text-muted">The people who make everything possible</p>
+    </div>
 
+    <!-- Team Grid -->
+    <div class="row g-4 justify-content-center">
 
+      <!-- Team Member 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="{% static 'images/team1.jpg' %}" class="card-img-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="card-title mb-1">John Doe</h5>
+            <p class="text-muted mb-2">Project Manager</p>
+            <p class="card-text small">
+              Oversees planning and ensures smooth project delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="{% static 'images/team2.jpg' %}" class="card-img-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Jane Smith</h5>
+            <p class="text-muted mb-2">Lead Developer</p>
+            <p class="card-text small">
+              Builds scalable and high-performance applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="{% static 'images/team3.jpg' %}" class="card-img-top" alt="Team Member">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Michael Lee</h5>
+            <p class="text-muted mb-2">UI/UX Designer</p>
+            <p class="card-text small">
+              Crafts intuitive and visually appealing user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 {% endblock %}
