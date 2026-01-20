@@ -100,8 +100,8 @@ class TeamsMainPost(models.Model):
     team_author = models.ForeignKey(User, on_delete=models.CASCADE)
 
        
-    class Meta:
-        ordering =['-team_publish_date']
+    '''class Meta:
+        ordering =['-team_publish_date']'''
     
     def __str__(self):
         return self.team_title + ' | ' + str(self.team_author)
