@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'contact' %}">Contact</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-7">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-user fa-2x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-1" data-toggle="counter-up">15</h2>
+                        <h5 class="fw-medium mb-0"style="color: #198754;font-family: Georgia;"> Years of Experience</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-house fa-2x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-1" data-toggle="counter-up">24</h2>
+                        <h5 class="fw-medium mb-0"style="color: #198754;font-family: Georgia;">Projects  Done</h5>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-city fa-2x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-1" data-toggle="counter-up">19</h2>
+                        <h5 class="fw-medium mb-0"style="color: #198754;font-family: Georgia;">Ongoing Projects</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
+                            <i class="fa-solid fa-handshake fa-2x text-primary"></i>
+                        </div>
+                        <h2 class="text-primary mb-1" data-toggle="counter-up">34</h2>
+                        <h5 class="fw-medium mb-0"style="color: #198754;font-family: Georgia;">Happy Clients</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+
+
+  
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-7 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 300px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-80" src="{% static 'img/azobeoj.jpg' %}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-7 mb-4" style="color: #198754;font-family: Georgia;">We’re all about your success.</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Azobeoj offers comprehensive architecture, engineering, 
+                            and land survey services for local projects, ranging from half-acre 
+                            sites to master-planned communities. For over four decades, we’ve built our business 
+                            around a talented and diverse team of professionals, each adding exceptional 
+                            discipline, know-how, and market insight for local clients and national programs. 
+                            They bring outstanding understanding to their projects, knowing potential pitfalls 
+                            to avoid while collaboratively working to create exceptional client solutions. 
+                            Our regional offices are filled with locals who know their community’s ins and outs 
+                            but have the regional and national capacity to tackle just about any project.</p>
+                        <div class="row g-4 mb-4 pb-2">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">134</h2>
+                                        <p class="fw-medium mb-0">Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">100</h2>
+                                        <p class="fw-medium mb-0">Projects Done</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+     <!-- Feature Start -->
+     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">What Sets Us Apart</h1>
+                        </div>
+                        <p class="mb-4 pb-2">At Azobeoj, we don't just build structures—we build lasting partnerships based on trust, innovation, and quality. Here’s what makes us stand out in the field of civil engineering:
+                            Expertise Across Multiple Disciplines
+                            Our team is composed of skilled engineers, designers, and project managers with a diverse range of expertise. Whether it’s residential, commercial, industrial, or municipal projects, we have the technical knowledge and experience to tackle any challenge.
+                            Client-Centered Approach
+                            We prioritize clear, open communication with our clients at every stage. From the initial consultation to the final delivery, we make sure your needs are heard, your expectations are exceeded, and your vision is brought to life with precision.
+                            Innovative Design and Sustainable Solutions
+                            Innovation is at the core of what we do. We continually seek new technologies, materials, and methodologies to create sustainable, cost-effective solutions that benefit both our clients and the environment. Our designs are not only efficient but also forward-thinking, ensuring long-term value.
+                            Commitment to Quality and Timeliness
+                            We pride ourselves on delivering projects of the highest quality—on time and within budget. Our team meticulously plans, designs, and executes each project, ensuring no detail is overlooked and every goal is met.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-60" src="{% static 'img/feature.jpg' %}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+
+
+
+  <!-- About Start -->
+  <div class="container-fluid bg-light overflow-hidden my-7 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0" style="min-height: 300px;">
+                <div class="position-relative h-70">
+                    <img class="position-absolute img-fluid w-100 h-80" src="{% static 'img/aazobeoj.jpg' %}" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    <div class="section-title text-start">
+                        <h1 class="display-7 mb-4" style="color: #198754;font-family: Georgia;">Building Excellence Together.</h1>
+                    </div>
+                    <p class="mb-4 pb-2">we believe that the best results are achieved when we work in close partnership with our clients. Our philosophy of Building Excellence Together means that every project is a collaborative effort aimed at delivering superior outcomes, tailored to your unique needs and goals.
+                        Collaboration at Every Step
+                        From the initial consultation through to the final handover, we view each project as a team effort. We work closely with our clients to understand their vision, challenges, and expectations, ensuring we deliver results that align with their objectives.               
+                        Commitment to Quality
+                        Building excellence is more than just meeting requirements—it’s about exceeding them. We take pride in the quality of our work, ensuring every project is constructed with precision, integrity, and durability. Our commitment to excellence is reflected in every design, material choice, and construction detail.
+                        Sustainable and Future-Focused
+                        Building with excellence is also about thinking ahead. We incorporate sustainable design practices into every project, ensuring that the structures we create are not only functional but environmentally responsible. We build with the future in mind, creating infrastructure that stands the test of time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+
+     <!-- Feature Start -->
+     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Excellence in Every Project</h1>
+                        </div>
+                        <p class="mb-4 pb-2">We are excellence in Every Project, is not just a motto it’s our standard of work. We approach each project with the same level of dedication, attention to detail, and commitment to quality, ensuring that every aspect is executed flawlessly.
+                            Tailored Solutions for Every Challenge
+                            Every project presents its own unique set of challenges. Whether we’re designing a high-rise building, a bridge, or a residential community, we approach each project with customized solutions that address the specific needs, goals, and constraints of our clients. Our team’s expertise ensures that every solution is efficient, practical, and sustainable.
+                            Precision in Design and Execution
+                            We take pride in our meticulous approach to design and construction. From concept to completion, we focus on every detail, ensuring that the final result is not only functional but also built to the highest standards. Our commitment to precision ensures that no matter the scale or complexity of the project, we deliver outstanding results every time.
+                            Continuous Improvement and Innovation
+                            Excellence is a continuous journey. We are always seeking ways to improve, adopting the latest technologies and techniques to enhance the quality and efficiency of our projects. Our focus on innovation ensures that we remain at the forefront of civil engineering, delivering cutting-edge solutions for every client.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-70">
+                        <img class="position-absolute img-fluid w-100 h-70" src="{% static 'img/aaazobeoj.jpg' %}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+{% endblock %}

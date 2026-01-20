@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Contact Us {% endblock %}
+{% block content%}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'about' %}">About Us</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <div class="boxed boxedp4">
+        <div class="row contactv2 text-center">
+            <div class="col-md-4">
+                <div class="small-box">
+                  
+                    <a href="https://wa.me/+2349139372840?text=Hi Azobeoj?"target="_blank">
+                    <i style="color: #198754;font-size: 50px;" class="fab fa-whatsapp"></i></a>
+                    <h4 style="font-family: Georgia;">Whatsapp Me </h4>
+                    <h5> <a style="font-weight:400;"href="https://wa.me/+2349139372840?text=Hi Azobeoj?"target="_blank">+234 913 937 2840</a></h5>
+                
+                </div><!-- end small-box -->
+            </div><!-- end col -->
+        
+            <div class="col-md-4"id="bb">
+                <div class="small-box">
+                    <a href="mailto:info@azobeoj.com"target="_blank">
+                    <i style="color: #198754;font-size: 50px;"class="fas fa-envelope"></i></a>
+                    <h4 style="font-family: Georgia;">Send Us an Email</h4>
+                    <p><a style="font-weight:400;" href="mailto:info@azobeoj.com"target="_blank">info@azobeoj.com</a></p>
+ 
+                </div><!-- end small-box -->
+            </div><!-- end col --> 
+            <div class="col-md-4"id="bc">
+                <div class="small-box">
+                    <a href="https://maps.app.goo.gl/P7JVyE2pE7QHNC6y5"target="_blank">
+                    <i style="color: #198754;font-size: 50px;" class="fas fa-map-marker-alt"></i>      
+                    <h4 style="font-family: Georgia;">Visit Azobeoj</h4>
+                    <a href="https://maps.app.goo.gl/P7JVyE2pE7QHNC6y5"target="_blank">
+                    <label>7, Limson Street Off River Valley Estate Ojodu Berger</span></a>
+                    <a style="font-weight:100;"href="https://maps.app.goo.gl/P7JVyE2pE7QHNC6y5"target="_blank"><p > </p></a>  
+                </div><!-- end small-box -->
+            </div><!-- end col -->   
+
+        </div><!-- end contactv2 -->
+    </div>
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+        <div class="container contact px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Contact Us</h1>
+                        </div>
+                        <p class="mb-4">Fill out your information and an Azobeoj representative will reach out to you within 24hr soon.</p>
+                        <form>
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="message-name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" name="message-email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" name="message" style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        {% for post in object_list %}
+                        <video autoplay muted playsinline loop width="100%" height="auto" controls style="border-radius: 5px; display: block;">
+                            <source src="{{ post.contact_video.url }}" type="video/mp4">
+                            <source src="{{ post.contact_video.url }}" type="video/webm">
+                            Your browser does not support the video tags.
+                        </video>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+{% endblock %}

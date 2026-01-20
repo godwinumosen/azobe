@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ object.last_title }} {% endblock %}
+{% block content%}
+
+<div>
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">{{ object.last_title }}</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'contact' %}">Contact</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-7 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-10 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                </div>
+                <div class="col-lg-10 ps-lg-5" style="min-height: 600px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{{ object.last_magnus_img.url }}" style="object-fit: cover; border-radius: 5px;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-10 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h1 class="display-7 mb-4">{{ object.last_title }}</h1>
+                        <p class="mb-4 pb-2">{{ object.last_description }}.</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href=""onclick="history.back(); return false;" class="btn btn-primary"style="border-radius: 5px;font-family: Georgia;"> Back </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- About End -->
+
+{% endblock %}
